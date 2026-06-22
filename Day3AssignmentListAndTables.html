@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Lists</title>
+</head>
+<body>
+    <!--1.Shopping list using ul and ol-->
+    <ul type="square">
+        <li>Shirts</li>
+        <li>Pants</li>
+        <li>Shoes</li>
+        <li>Bags</li>
+    </ul>
+    <ol type="1">
+        <li>go to the shirt section and buy shirt</li>
+        <li>go to the pants section and buy pants</li>
+        <li>go to the shoes section and buy shoes</li>
+        <li>go to the bags section and buy bags</li>
+    </ol>
+    <!--2.Nested List-->
+    
+        <ul>
+            <li>Vegetables
+            <ul>
+            <li>Potato</li>
+            <li>Tomato</li>
+            <li>Chillies</li>
+            
+            </ul>
+    </li>
+    </ul>
+    <ol>
+        <li>Fruits
+            <ol>
+            <li>Orange</li>
+            <li>Papaya</li>
+            <li>Grapes</li>
+            </ol>
+        </li>
+    </ol>
+    <!--3.Simple tables with rows and columns-->
+    <table border="1">
+       <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Dept</td>
+        <td>Location</td>
+       </tr>
+       <tr>
+        <td>101</td>
+        <td>Sundaresan B</td>
+        <td>23</td>
+        <td>IT</td>
+        <td>Sivaganga</td>
+       </tr>
+       <tr>
+        <td>102</td>
+        <td>Siva</td>
+        <td>22</td>
+        <td>CSE</td>
+        <td>Chennai</td>
+       </tr>
+       <tr>
+        <td>103</td>
+        <td>Shakthi</td>
+        <td>24</td>
+        <td>ECE</td>
+        <td>Madurai</td>
+       </tr>
+       <tr>
+        <td>104</td>
+        <td>Saravana</td>
+        <td>21</td>
+        <td>EEE</td>
+        <td>Bangalore</td>
+       </tr>
+    </table> <br>
+    <!--4.adding headers to table using th-->
+    <table border="1">
+        <th colspan="5">Student Details</th>
+        <tr>
+         <td>Id</td>
+         <td>Name</td>
+         <td>Age</td>
+         <td>Dept</td>
+         <td>Location</td>
+        </tr>
+        <tr>
+         <td>101</td>
+         <td>Sundaresan B</td>
+         <td>23</td>
+         <td>IT</td>
+         <td>Sivaganga</td>
+        </tr>
+        <tr>
+         <td>102</td>
+         <td>Siva</td>
+         <td>22</td>
+         <td>CSE</td>
+         <td>Chennai</td>
+        </tr>
+        <tr>
+         <td>103</td>
+         <td>Shakthi</td>
+         <td>24</td>
+         <td>ECE</td>
+         <td>Madurai</td>
+        </tr>
+        <tr>
+         <td>104</td>
+         <td>Saravana</td>
+         <td>21</td>
+         <td>EEE</td>
+         <td>Bangalore</td>
+        </tr>
+     </table>
+     <!--5.colspan,rowspan,and adding borders and padding with CSS-->
+     <table border="1" width="40%" cellspacing="10px" cellpadding="20px">
+        <th colspan="5">Student Details</th>
+        <tr>
+         <td>Id</td>
+         <td>Name</td>
+         <td>Age</td>
+         <td>Dept</td>
+         <td>Location</td>
+        </tr>
+        <tr>
+         <td>101</td>
+         <td>Sundaresan B</td>
+         <td>23</td>
+         <td rowspan="3">IT</td>
+         <td>Sivaganga</td>
+        </tr>
+        <tr>
+         <td>102</td>
+         <td>Siva</td>
+         <td>22</td>
+         
+         <td>Chennai</td>
+        </tr>
+        <tr>
+         <td>103</td>
+         <td>Shakthi</td>
+         <td>24</td>
+        
+         <td>Madurai</td>
+        </tr>
+        <tr>
+         <td>104</td>
+         <td>Saravana</td>
+         <td>21</td>
+         <td>EEE</td>
+         <td>Bangalore</td>
+        </tr>
+     </table>
+    
+</body>
+</html>
