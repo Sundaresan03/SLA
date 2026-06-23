@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!--1.Basic Form Structure-->
+    <h3>Basic Form Structure</h3>
+    <form action="nav0.html" method="get">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name"> <br> <br>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age"> <br> <br>
+        <input type="submit" name="submit" id="submit">
+    </form><br><br>
+    <!--2.Login Form-->
+    <h3>Login Form</h3>
+    <form>
+        <label for="mail">Email: </label>
+        <input type="email" name="mail" id="mail"><br><br>
+        <label for="pwd">Password: </label>
+        <input type="password" name="pwd" id="pwd"><br><br>
+        <input type="submit" name="Login" id="login" value="Login">
+    </form><br><br>
+    <!--3.Using checkboxes,radio buttons, and number-->
+    <h3>Using checkboxes,radio buttons, and number</h3>
+    <form action="">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name"> <br> <br>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age"><br><br>
+        <b>Select your Gender: </b>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label> <br><br>
+        <b>Select your Hobbies</b>
+        <input type="checkbox" name="cric" id="cric">
+        <label for="cric">Cricket</label>
+        <input type="checkbox" name="volley" id="volley">
+        <label for="volley">Volley Ball</label>
+        <input type="checkbox" name="foot" id="foot">
+        <label for="foot">Foot Ball</label>
+    </form> <br><br>
+
+    <!--4.label and placeholder-->
+    <h3>Label and Placeholder</h3>
+    <form action="">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+        <label for="age">Age: </label><br>
+        <input type="number" name="age" id="age" placeholder="Enter your Age">
+    </form><br><br>
+
+    <!--5.Use required to make fields mandatory. Practice building a signup form where name, email, and password are required.--> 
+   <h3>5.Using required fields and Creating Signup Form</h3>
+    <form action="">
+        <label for="name">Name: </label><br>
+        <input type="text" name="name" id="name" required><br>
+        <label for="age">Age: </label><br>
+        <input type="number" name="age" id="age" required><br>
+        <label for="mail">Email: </label><br>
+        <input type="email" name="mail" id="mail" required><br>
+        <label for="pwd">Password: </label><br>
+        <input type="password" name="pwd" id="pwd"><br><br>
+        <input type="submit" name="submit" id="submit">
+    </form><br><br><br>
+    <!--6.Build a registration form with text, email, password, gender (radio), hobbies (checkbox), age (number), and submit button. Include labels, placeholders, and validation.-->
+   <h3>Registration Form</h3>
+    <form action="">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+        <label for="mail">Email: </label><br>
+        <input type="email" name="mail" id="mail" placeholder="Enter your Mail" required><br>
+        <label for="pwd">Password: </label><br>
+        <input type="password" name="pwd" id="pwd" placeholder="Enter your password" required><br>
+        <label for="dob">DOB: </label><br>
+        <input type="date" name="dob" id="dob" placeholder="Enter your DOB" required><br>
+        <label for="age">Age: </label><br>
+        <input type="number" name="age" id="age" placeholder="Enter your Age" required><br>
+        <b>Select your Gender: </b>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label> <br><br>
+        <b>Select your Hobbies: </b>
+        <input type="checkbox" name="cric" id="cric">
+        <label for="cric">Cricket</label>
+        <input type="checkbox" name="volley" id="volley">
+        <label for="volley">Volley Ball</label>
+        <input type="checkbox" name="foot" id="foot">
+        <label for="foot">Foot Ball</label><br><br>
+        <input type="submit" name="submit" id="submit">
+    </form>
+</body>
+</html>
