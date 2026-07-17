@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+      // <!--1.Armstrong Number -->
+       let num=Number(prompt("Enter a Number"));
+       let temp=num;
+       let sum=0;
+       while(temp!=0)
+       {
+         let rem=parseInt(temp%10);
+         sum=sum+(rem*rem*rem);
+         temp=parseInt(temp/10);
+       }
+       if(sum==num)
+       {
+        console.log("Armstrong number");
+       }
+       else
+       {
+        console.log("Not an Armstrong Number");
+       }
+     
+  //  2.Factorial Program
+
+    let fact=1;
+    let num=Number(prompt("Enter a number"));
+    for(let i=1;i<=num;i++)
+   {
+        fact*=i;
+   }
+   console.log(fact);
+
+//3.Prime Number Program
+let count=0;
+let num=Number(prompt("Enter a number"));
+     for(let i=1;i<=num;i++)
+     {
+        
+        if(num%i==0)
+     {
+           count++;
+     }
+     }
+     if(count==2)
+     {
+        console.log("Prime number");
+     }
+     else
+     {
+        console.log("Not a Prime Number");
+     }
+
+//3.Prime Number Program Series
+let op="";
+for(let num=2;num<=100;num++){
+let count=0;
+        
+     for(let i=1;i<=num;i++)
+     {
+        
+        if(num%i==0)
+     {
+           count++;
+     }
+     }
+     if(count===2)
+     {
+        op+=num+" ";
+     }
+
+}
+ console.log(op);
+
+//16.print the Armstrong no series
+          let op="";
+       for(let num=1;num<=1000;num++){
+       let temp=num;
+       let sum=0;
+       while(temp!=0)
+       {
+         let rem=parseInt(temp%10);
+         sum=sum+(rem*rem*rem);
+         temp=parseInt(temp/10);
+       }
+       if(sum===num)
+       {
+         op+=num+" ";
+       }
+
+   }
+   console.log(op);
+
+//17.Fibnacie Series(0 1 1 2 3 5 8 13..)
+   let first=0;
+   let second=1;
+   let op="";
+
+   for(let i=1;i<=10;i++)
+   {
+        op+=first+" ";
+        let next=first+second;
+        first=second;
+        second=next;
+      
+   }
+   console.log(op);
+
+  //18.Print the 5 Table(1 * 5 = 5)
+  
+  for(let i=1;i<=10;i++)
+  {
+    console.log(`${i} * 5 = ${i*5}`);
+  }
+
+  //19.Sum of digit(1 + 2 + 3 + ...)
+
+  let sum=0;
+  let num=123;
+  while(num!=0)
+  {
+    let rem=parseInt(num%10);
+    sum=sum+rem;
+    num=parseInt(num/10);
+  }
+  console.log(sum);
+
+//20.Palindrom or not    BAAB,MALAYALAM
+
+let str=prompt("Enter a string");
+let reverse="";
+for(let i=str.length-1;i>=0;i--)
+{
+    reverse+=str[i];
+}
+if(str==reverse)
+{
+    console.log("Palindrome");
+}
+else
+{
+    console.log("Not Palindrome");
+}
+   </script> 
+</body>
+</html>
